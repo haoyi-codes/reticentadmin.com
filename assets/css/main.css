@@ -1,0 +1,267 @@
+/* Reticent Admin - Main Style Sheet */
+
+/* Copyright (c) 2024 Aryan */
+/* SPDX-License-Identifier: BSD-3-Clause */
+
+/* Version: 1.0.0 */
+
+html {
+    height: 100%;
+}
+
+/* body classes */
+body {
+    margin: 0;
+    padding-bottom: 40px;
+    position: relative;
+    top: 40px;
+    font-family: Roboto, sans-serif;
+    line-height: 1.2;
+    color: #ffffff;
+    background-color: #1a1a1a;
+}
+
+/* navbar classes */
+nav.navbar {
+    /* This makes it always stay at the top */
+    width: 100%;
+    position: fixed;
+    top: 0;
+    line-height: 1;
+    /* Creates the whole bar */
+    background-color: #444444;
+}
+
+nav.navbar a {
+    padding: 10px;
+    display: block;
+    float: left;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+nav.navbar a.active {
+    color: #000000;
+    background-color: #4db8ff;
+}
+
+nav.navbar a.right {
+    float: right;
+}
+
+nav.navbar a:hover {
+    color: #000000;
+    background-color: #99e6ff;
+}
+
+/* group classes */
+code, h1, h2, h3, h4, h5, li, p {
+    width: 50%;
+    word-wrap: break-word;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* h1 classes */
+h1 {
+    font-size: 35px;
+}
+
+h1.website-name {
+    text-align: center;
+    font-size: 40px;
+}
+
+/* h2 classes */
+h2 {
+    font-size: 30px;
+}
+
+h2.center {
+    text-align: center;
+}
+
+/* h3 classes */
+h3 {
+    font-size: 25px;
+}
+
+/* h4 classes */
+h4 {
+    font-size: 20px;
+}
+
+/* h5 classes */
+h5 {
+    font-size: 18px;
+}
+
+/* a classes */
+a {
+    text-decoration: none;
+    color: #00FFFF;
+}
+
+a:visited {
+    color: #00FFFF;
+}
+
+/* ol classes */
+ol ul{
+    margin-bottom: 1.5em;
+}
+
+/* li classes */
+li {
+    line-height: 1.5;
+    font-size: 20px;
+    word-wrap: break-word;
+}
+
+/* p classes */
+p {
+    font-size: 20px;
+    word-wrap: break-word;
+}
+
+p.center {
+    text-align: center;
+}
+
+/* img classes */
+img {
+    max-width: 50%;
+}
+
+img.right {
+    float: right;
+    margin-left: 2%;
+    margin-right: 25%;
+    margin-bottom: 2%;
+}
+
+img.small {
+    max-width: 15%;
+}
+
+img.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Custom classes */
+
+/* Code block classes */
+code {
+    font-size: 20px;
+    background-color: #424242;
+    display: block;
+    padding: 2px;
+}
+
+/* Smaller Displays */
+
+/* Tablet Size */
+@media (min-width: 600px) and (max-width: 1000px) {
+
+    /* navbar classes */
+    nav.navbar {
+        display: flex;
+        overflow-x: scroll;
+    }
+
+    /* group classes */
+    h1, h2, h3, h4, li, p {
+        width: 80%;
+    }
+
+    /* img classes */
+    img {
+        max-width: 80%;
+    }
+
+    img.small {
+        max-width: 25%;
+    }
+
+    img.right {
+        margin-right: 15%;
+    }
+
+}
+
+/* Smartphone Size */
+@media (max-width: 600px) {
+
+    /* navbar classes */
+    nav.navbar {
+        display: flex;
+        overflow-x: scroll;
+    }
+
+    /* group classes */
+    h1, h2, h3, h4, li, p {
+        width: 90%;
+    }
+
+    /* h1 classes */
+    h1 {
+        font-size: 30px;
+    }
+
+    h1.website-name {
+        font-size: 35px;
+    }
+
+    /* h2 classes */
+    h2 {
+        font-size: 25px;
+    }
+
+    /* h3 classes */
+    h3 {
+        font-size: 20px;
+    }
+
+    /* h4 classes */
+    h4 {
+        font-size: 15px;
+    }
+
+    /* h5 classes */
+    h5 {
+        font-size: 13px;
+    }
+
+    /* li classes */
+    li {
+        font-size: 15px;
+    }
+
+    /* p classes */
+    p {
+        font-size: 15px;
+    }
+
+    /* img classes */
+    img {
+        max-width: 80%;
+    }
+
+    img.small {
+        max-width: 25%;
+    }
+
+    img.right {
+        margin-right: 15%;
+    }
+
+    /* Custom classes */
+    
+    /* Code block classes */
+    code {
+        font-size: 15px;
+    }
+
+}
