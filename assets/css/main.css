@@ -3,7 +3,7 @@
 /* Copyright (c) 2024 Aryan */
 /* SPDX-License-Identifier: BSD-3-Clause */
 
-/* Version: 1.0.0 */
+/* Version: 1.1.0 */
 
 html {
     height: 100%;
@@ -17,8 +17,8 @@ body {
     top: 40px;
     font-family: Roboto, sans-serif;
     line-height: 1.2;
-    color: #ffffff;
-    background-color: #1a1a1a;
+    color: #000000;
+    background-color: #f0f0f0;
 }
 
 /* navbar classes */
@@ -29,7 +29,7 @@ nav.navbar {
     top: 0;
     line-height: 1;
     /* Creates the whole bar */
-    background-color: #444444;
+    background-color: #4a4a4a;
 }
 
 nav.navbar a {
@@ -42,7 +42,7 @@ nav.navbar a {
 
 nav.navbar a.active {
     color: #000000;
-    background-color: #4db8ff;
+    background-color: #4682b4;
 }
 
 nav.navbar a.right {
@@ -51,7 +51,7 @@ nav.navbar a.right {
 
 nav.navbar a:hover {
     color: #000000;
-    background-color: #99e6ff;
+    background-color: #b0c4de;
 }
 
 /* group classes */
@@ -99,11 +99,11 @@ h5 {
 /* a classes */
 a {
     text-decoration: none;
-    color: #00FFFF;
+    color: #1a73e8;
 }
 
 a:visited {
-    color: #00FFFF;
+    color: #1a73e8;
 }
 
 /* ol classes */
@@ -155,7 +155,8 @@ img.center {
 /* Code block classes */
 code {
     font-size: 20px;
-    background-color: #424242;
+    color: #44474e;
+    background-color: #c4c6cf;
     display: block;
     padding: 2px;
 }
