@@ -1,2 +1,16 @@
+# File Name: robots.txt
+# Description: Web crawler configuration file.
+
+# Copyright (c) 2025 Aryan
+# SPDX-License-Identifier: BSD-3-Clause
+
+# Version: 1.0.0
+
+User-agent: Googlebot
+Disallow:
+
+User-agent: DuckDuckBot
+Disallow:
+
 User-agent: *
 Disallow: /
