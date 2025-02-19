@@ -3,7 +3,7 @@
 /* Copyright (c) 2024 Aryan */
 /* SPDX-License-Identifier: BSD-3-Clause */
 
-/* Version: 1.4.0 */
+/* Version: 1.5.0 */
 
 html {
     height: 100%;
@@ -185,8 +185,12 @@ code {
         max-width: 80%;
     }
 
+    img.medium {
+        max-width: 70%;
+    }
+
     img.small {
-        max-width: 25%;
+        max-width: 30%;
     }
 
     img.right {
@@ -253,8 +257,12 @@ code {
         max-width: 80%;
     }
 
+    img.medium {
+        max-width: 70%;
+    }
+
     img.small {
-        max-width: 25%;
+        max-width: 30%;
     }
 
     img.right {
