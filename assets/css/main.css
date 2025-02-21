@@ -3,7 +3,7 @@
 /* Copyright (c) 2024 Aryan */
 /* SPDX-License-Identifier: BSD-3-Clause */
 
-/* Version: 1.6.0 */
+/* Version: 2.0.0 */
 
 html {
     height: 100%;
@@ -17,8 +17,6 @@ body {
     top: 40px;
     font-family: Roboto, sans-serif;
     line-height: 1.2;
-    color: #000000;
-    background-color: #f0f0f0;
 }
 
 /* navbar classes */
@@ -28,29 +26,17 @@ nav.navbar {
     position: fixed;
     top: 0;
     line-height: 1;
-    /* Creates the whole bar */
-    background-color: #4a4a4a;
 }
 
 nav.navbar a {
     padding: 10px;
     display: block;
     float: left;
-    color: #ffffff;
     text-decoration: none;
-}
-
-nav.navbar a.active {
-    background-color: #4682b4;
 }
 
 nav.navbar a.right {
     float: right;
-}
-
-nav.navbar a:hover {
-    color: #000000;
-    background-color: #b0c4de;
 }
 
 /* group classes */
@@ -96,13 +82,8 @@ h5 {
 }
 
 /* a classes */
-a {
+a, a:visited{
     text-decoration: none;
-    color: #1a73e8;
-}
-
-a:visited {
-    color: #1a73e8;
 }
 
 /* ol classes */
@@ -162,8 +143,6 @@ figcaption {
 /* Code block classes */
 code {
     font-size: 20px;
-    color: #44474e;
-    background-color: #c4c6cf;
     display: block;
     padding: 2px;
 }
@@ -281,4 +260,55 @@ code {
         font-size: 15px;
     }
 
+}
+
+/* Color Schemes */
+
+body {
+    color: #000000;
+    background-color: #f0f0f0;
+}
+
+nav.navbar{
+    /* Creates the whole bar */
+    background-color: #4a4a4a;
+}
+
+nav.navbar a {
+    color: #ffffff;
+}
+
+nav.navbar a.active {
+    background-color: #4682b4;
+} 
+
+nav.navbar a:hover {
+    color: #000000;
+    background-color: #b0c4de;
+}
+
+
+a, a:visited {
+    color: #1a73e8;
+}
+
+code {
+    color: #44474e;
+    background-color: #c4c6cf;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        color: #ffffff;
+        background-color: #1e1e1e;
+    }
+
+    a, a:visited {
+        color: #62aee4;
+    }
+
+    code {
+        color: #e0e0e0;
+        background-color: #2d2d2d;
+    }
 }
