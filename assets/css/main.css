@@ -3,7 +3,7 @@
 /* Copyright (c) 2024 Aryan */
 /* SPDX-License-Identifier: BSD-3-Clause */
 
-/* Version: 2.0.0 */
+/* Version: 2.0.1 */
 
 html {
     height: 100%;
@@ -286,7 +286,6 @@ nav.navbar a:hover {
     color: #000000;
     background-color: #b0c4de;
 }
-
 
 a, a:visited {
     color: #1a73e8;
