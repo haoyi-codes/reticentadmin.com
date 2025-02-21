@@ -3,7 +3,7 @@
 /* Copyright (c) 2024 Aryan */
 /* SPDX-License-Identifier: BSD-3-Clause */
 
-/* Version: 1.5.0 */
+/* Version: 1.6.0 */
 
 html {
     height: 100%;
@@ -54,7 +54,7 @@ nav.navbar a:hover {
 }
 
 /* group classes */
-code, h1, h2, h3, h4, h5, li, p {
+code, figcaption, h1, h2, h3, h4, h5, li, p {
     width: 50%;
     word-wrap: break-word;
     margin-left: auto;
@@ -151,6 +151,10 @@ img.center {
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+figcaption {
+    text-align: center;
 }
 
 /* Custom classes */
