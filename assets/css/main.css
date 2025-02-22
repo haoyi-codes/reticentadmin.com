@@ -3,7 +3,7 @@
 /* Copyright (c) 2024 Aryan */
 /* SPDX-License-Identifier: BSD-3-Clause */
 
-/* Version: 2.0.1 */
+/* Version: 2.1.1 */
 
 html {
     height: 100%;
@@ -135,6 +135,8 @@ img.center {
 }
 
 figcaption {
+    margin-top: 10px;
+    font-size: 16px;
     text-align: center;
 }
 
@@ -150,7 +152,7 @@ code {
 /* Smaller Displays */
 
 /* Tablet Size */
-@media (min-width: 600px) and (max-width: 1000px) {
+@media (min-width: 600px) and (max-width: 1500px) {
 
     /* navbar classes */
     nav.navbar {
@@ -159,7 +161,7 @@ code {
     }
 
     /* group classes */
-    h1, h2, h3, h4, li, p {
+    code, figcaption, h1, h2, h3, h4, h5, li, p {
         width: 80%;
     }
 
@@ -192,7 +194,7 @@ code {
     }
 
     /* group classes */
-    h1, h2, h3, h4, li, p {
+    code, figcaption, h1, h2, h3, h4, h5, li, p {
         width: 90%;
     }
 
@@ -251,6 +253,10 @@ code {
     img.right {
         margin-right: 5%;
         padding: 10px;
+    }
+
+    figcaption {
+        font-size: 12px;
     }
 
     /* Custom classes */
