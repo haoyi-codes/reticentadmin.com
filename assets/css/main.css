@@ -3,7 +3,7 @@
 /* Copyright (c) 2024 Aryan */
 /* SPDX-License-Identifier: BSD-3-Clause */
 
-/* Version: 2.2.1 */
+/* Version: 2.3.1 */
 
 html {
     height: 100%;
@@ -153,12 +153,6 @@ code {
 
 /* Tablet Size */
 @media (min-width: 600px) and (max-width: 1500px) {
-
-    /* navbar classes */
-    nav.navbar {
-        display: flex;
-        overflow-x: scroll;
-    }
 
     /* group classes */
     code, figcaption, h1, h2, h3, h4, h5, li, p {
