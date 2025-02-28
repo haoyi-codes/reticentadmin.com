@@ -3,7 +3,7 @@
 /* Copyright (c) 2024 Aryan */
 /* SPDX-License-Identifier: BSD-3-Clause */
 
-/* Version: 2.3.1 */
+/* Version: 2.4.1 */
 
 html {
     height: 100%;
@@ -140,13 +140,26 @@ figcaption {
     text-align: center;
 }
 
-/* Custom classes */
+/* Custom Classes */
 
 /* Code block classes */
 code {
     font-size: 20px;
     display: block;
     padding: 2px;
+}
+
+/* Social Container */
+.social-container {
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+}
+
+.social-container img {
+    width: 200px;
+    height: 200px;
+    margin: 20px;
 }
 
 /* Smaller Displays */
@@ -176,6 +189,18 @@ code {
         margin-right: 15%;
     }
 
+    /* Custom Classes */
+
+    /* Social Container */
+    .social-container {
+        width: 80%;
+    }
+    
+    .social-container img {
+        width: 100px;
+        height: 100px;
+        margin: 10px;
+    }
 }
 
 /* Smartphone Size */
@@ -253,11 +278,22 @@ code {
         font-size: 12px;
     }
 
-    /* Custom classes */
+    /* Custom Classes */
     
     /* Code block classes */
     code {
         font-size: 15px;
+    }
+
+    /* Social Container */
+    .social-container {
+        width: 90%;
+    }
+    
+    .social-container img {
+        width: 100px;
+        height: 100px;
+        margin: 5px;
     }
 
 }
