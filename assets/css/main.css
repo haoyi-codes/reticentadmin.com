@@ -3,13 +3,14 @@
 /* Copyright (c) 2024 Aryan */
 /* SPDX-License-Identifier: BSD-3-Clause */
 
-/* Version: 2.4.1 */
+/* Version: 3.0.0 */
 
 html {
     height: 100%;
 }
 
 /* body classes */
+
 body {
     margin: 0;
     padding-bottom: 40px;
@@ -17,49 +18,28 @@ body {
     top: 40px;
     font-family: Roboto, sans-serif;
     line-height: 1.2;
-}
-
-/* navbar classes */
-nav.navbar {
-    /* This makes it always stay at the top */
-    width: 100%;
-    position: fixed;
-    top: 0;
-    line-height: 1;
-}
-
-nav.navbar a {
-    padding: 10px;
-    display: block;
-    float: left;
-    text-decoration: none;
-}
-
-nav.navbar a.right {
-    float: right;
-}
-
-/* group classes */
-code, figcaption, h1, h2, h3, h4, h5, li, p {
-    width: 50%;
-    word-wrap: break-word;
-    margin-left: auto;
-    margin-right: auto;
+    color: #000000;
+    background-color: #f0f0f0;
 }
 
 /* h1 classes */
-h1 {
-    font-size: 35px;
-}
 
-h1.website-name {
-    text-align: center;
-    font-size: 40px;
+h1 {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 35px;
+    word-wrap: break-word;
 }
 
 /* h2 classes */
+
 h2 {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
     font-size: 30px;
+    word-wrap: break-word;
 }
 
 h2.center {
@@ -67,39 +47,41 @@ h2.center {
 }
 
 /* h3 classes */
+
 h3 {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
     font-size: 25px;
+    word-wrap: break-word;
 }
 
 /* h4 classes */
+
 h4 {
-    font-size: 20px;
-}
-
-/* h5 classes */
-h5 {
-    font-size: 18px;
-}
-
-/* a classes */
-a, a:visited{
-    text-decoration: none;
-}
-
-/* ol classes */
-ol li{
-    margin-bottom: 10px;
-}
-
-/* li classes */
-li {
-    line-height: 1.5;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
     font-size: 20px;
     word-wrap: break-word;
 }
 
+/* h5 classes */
+
+h5 {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 18px;
+    word-wrap: break-word;
+}
+
 /* p classes */
+
 p {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
     font-size: 20px;
     word-wrap: break-word;
 }
@@ -108,7 +90,61 @@ p.center {
     text-align: center;
 }
 
+/* a classes */
+
+a, a:visited {
+    text-decoration: none;
+}
+
+a:visited {
+    color: #1a73e8;
+}
+
+/* ol classes */
+
+ol li{
+    margin-bottom: 10px;
+}
+
+/* li classes */
+
+li {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.5;
+    font-size: 20px;
+    word-wrap: break-word;
+}
+
+/* table classes */
+
+table {
+    width: 50%;
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+    text-align: left;
+}
+
+/* th classes */
+
+th {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    background-color: #4a4a4a;
+}
+
+/* td classes */
+
+td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+}
+
 /* img classes */
+
 img {
     max-width: 50%;
 }
@@ -134,22 +170,69 @@ img.center {
     margin-right: auto;
 }
 
+/* figcaption classes */
+
 figcaption {
+    width: 50%;
     margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
     font-size: 16px;
+    word-wrap: break-word;
     text-align: center;
 }
 
-/* Custom Classes */
+/* code classes */
 
-/* Code block classes */
 code {
+    width: 50%;
     font-size: 20px;
+    word-wrap: break-word;
+    margin-left: auto;
+    margin-right: auto;
     display: block;
     padding: 2px;
+    color: #44474e;
+    background-color: #c4c6cf;
 }
 
-/* Social Container */
+/* nav classes */
+
+nav.navbar {
+    /* this makes it always stay at the top */
+    width: 100%;
+    position: fixed;
+    top: 0;
+    line-height: 1;
+    /* creates the whole bar */
+    background-color: #4a4a4a;
+}
+
+nav.navbar a {
+    padding: 10px;
+    display: block;
+    float: left;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+nav.navbar a.active {
+    background-color: #4682b4;
+}
+
+nav.navbar a:hover {
+    color: #000000;
+    background-color: #b0c4de;
+}
+
+nav.navbar a.right {
+    float: right;
+}
+
+/** custom classes **/
+
+/* social container */
+
 .social-container {
     display: block;
     margin: 0 auto;
@@ -157,23 +240,69 @@ code {
 }
 
 .social-container img {
-    width: 200px;
-    height: 200px;
-    margin: 20px;
+    border-radius: 15%;
+    width: 150px;
+    height: 150px;
+    margin: 15px;
 }
 
-/* Smaller Displays */
+/** smaller displays **/
 
-/* Tablet Size */
+/* tablet size */
+
 @media (min-width: 600px) and (max-width: 1500px) {
+    /* h1 classes */
 
-    /* group classes */
-    code, figcaption, h1, h2, h3, h4, h5, li, p {
+    h1 {
+        width: 80%;
+    }
+
+    /* h2 classes */
+
+    h2 {
+        width: 80%;
+    }
+
+    /* h3 classes */
+
+    h3 {
+        width: 80%;
+    }
+
+    /* h4 classes */
+
+    h4 {
+        width: 80%;
+    }
+
+    /* h5 classes */
+
+    h5 {
+        width: 80%;
+    }
+
+    /* p classes */
+
+    p {
+        width: 80%;
+    }
+
+    /* li classes */
+
+    li {
+        width: 80%;
+    }
+
+    /* table classes */
+
+    table {
         width: 80%;
     }
 
     /* img classes */
+
     img {
+        width: 80%;
         max-width: 80%;
     }
 
@@ -189,9 +318,22 @@ code {
         margin-right: 15%;
     }
 
-    /* Custom Classes */
+    /* figcaption classes */
 
-    /* Social Container */
+    figcaption {
+        width: 80%;
+    }
+
+    /* code classes */
+
+    code {
+        width: 80%;
+    }
+
+    /** custom classes **/
+
+    /* social container */
+
     .social-container {
         width: 80%;
     }
@@ -203,22 +345,13 @@ code {
     }
 }
 
-/* Smartphone Size */
+/* smartphone size */
+
 @media (max-width: 600px) {
-
-    /* navbar classes */
-    nav.navbar {
-        display: flex;
-        overflow-x: scroll;
-    }
-
-    /* group classes */
-    code, figcaption, h1, h2, h3, h4, h5, li, p {
-        width: 90%;
-    }
-
     /* h1 classes */
+
     h1 {
+        width: 90%;
         font-size: 30px;
     }
 
@@ -227,36 +360,56 @@ code {
     }
 
     /* h2 classes */
+
     h2 {
+        width: 90%;
         font-size: 25px;
     }
 
     /* h3 classes */
+
     h3 {
+        width: 90%;
         font-size: 20px;
     }
 
     /* h4 classes */
+
     h4 {
+        width: 90%;
         font-size: 15px;
     }
 
     /* h5 classes */
+
     h5 {
+        width: 90%;
         font-size: 13px;
     }
 
-    /* li classes */
-    li {
+    /* p classes */
+
+    p {
+        width: 90%;
         font-size: 15px;
     }
 
-    /* p classes */
-    p {
+    /* li classes */
+
+    li {
+        width: 90%;
+        font-size: 15px;
+    }
+
+    /* table classes */
+    
+    table {
+        width: 90%;
         font-size: 15px;
     }
 
     /* img classes */
+
     img {
         max-width: 80%;
     }
@@ -274,63 +427,44 @@ code {
         padding: 10px;
     }
 
+    /* figcaption classes */
+
     figcaption {
+        width: 90%;
         font-size: 12px;
     }
 
-    /* Custom Classes */
-    
-    /* Code block classes */
+    /* code classes */
+
     code {
+        width: 90%;
         font-size: 15px;
     }
 
-    /* Social Container */
+    /* navbar classes */
+
+    nav.navbar {
+        display: flex;
+        overflow-x: scroll;
+    }
+
+    /** custom classes **/
+    
+    /* social container */
+
     .social-container {
         width: 90%;
     }
     
     .social-container img {
-        width: 100px;
-        height: 100px;
+        width: 75px;
+        height: 75px;
         margin: 5px;
     }
 
 }
 
-/* Color Schemes */
-
-body {
-    color: #000000;
-    background-color: #f0f0f0;
-}
-
-nav.navbar{
-    /* Creates the whole bar */
-    background-color: #4a4a4a;
-}
-
-nav.navbar a {
-    color: #ffffff;
-}
-
-nav.navbar a.active {
-    background-color: #4682b4;
-} 
-
-nav.navbar a:hover {
-    color: #000000;
-    background-color: #b0c4de;
-}
-
-a, a:visited {
-    color: #1a73e8;
-}
-
-code {
-    color: #44474e;
-    background-color: #c4c6cf;
-}
+/* color schemes */
 
 @media (prefers-color-scheme: dark) {
     body {
