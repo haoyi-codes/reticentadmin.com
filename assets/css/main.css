@@ -3,7 +3,7 @@
 /* Copyright (c) 2024 Aryan */
 /* SPDX-License-Identifier: BSD-3-Clause */
 
-/* Version: 3.0.0 */
+/* Version: 3.0.1 */
 
 html {
     height: 100%;
@@ -121,6 +121,7 @@ li {
 
 table {
     width: 50%;
+    table-layout: fixed;
     border-collapse: collapse;
     margin-left: auto;
     margin-right: auto;
@@ -136,11 +137,34 @@ th {
     background-color: #4a4a4a;
 }
 
+th.center {
+    text-align: center;
+}
+
 /* td classes */
 
 td {
     padding: 12px 15px;
     border: 1px solid #ddd;
+    overflow-wrap: break-word;
+}
+
+td code {
+    width: 100%;
+}
+
+td.center {
+    text-align: center;
+}
+
+/* col classes */
+
+col.thin {
+    width: 20%;
+}
+
+col.wide {
+    width: 80%;
 }
 
 /* img classes */
@@ -406,6 +430,16 @@ nav.navbar a.right {
     table {
         width: 90%;
         font-size: 15px;
+    }
+
+    /* col classes */
+    
+    col.thin {
+        width: 30%;
+    }
+    
+    col.wide {
+        width: 70%;
     }
 
     /* img classes */
