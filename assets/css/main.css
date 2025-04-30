@@ -3,7 +3,7 @@
 /* Copyright (c) 2024 Aryan */
 /* SPDX-License-Identifier: BSD-3-Clause */
 
-/* Version: 3.2.4 */
+/* Version: 3.3.4 */
 
 html {
     height: 100%;
@@ -475,6 +475,7 @@ nav.navbar a:hover {
     nav.navbar {
         display: flex;
         overflow-x: scroll;
+        line-height: 1;
     }
 
     /** custom classes **/
