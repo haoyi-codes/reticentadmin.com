@@ -528,4 +528,8 @@ nav.navbar a:hover {
     nav.navbar a {
         color: #ffffff;
     }
+
+    nav.navbar a:hover {
+        background-color: #2e2e2e;
+    }
 }
