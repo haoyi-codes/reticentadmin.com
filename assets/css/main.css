@@ -3,7 +3,7 @@
 /* Copyright (c) 2024 Aryan */
 /* SPDX-License-Identifier: BSD-3-Clause */
 
-/* Version: 3.1.2 */
+/* Version: 3.1.4 */
 
 html {
     height: 100%;
@@ -510,7 +510,7 @@ nav.navbar a:hover {
     /* th classes */
     
     th {
-        color: #000000;
+        color: #ffffff;
     }
 
     /* code classes */
