@@ -3,7 +3,7 @@
 /* Copyright (c) 2024 Aryan */
 /* SPDX-License-Identifier: BSD-3-Clause */
 
-/* Version: 3.0.1 */
+/* Version: 3.1.1 */
 
 html {
     height: 100%;
@@ -16,7 +16,7 @@ body {
     padding-bottom: 40px;
     position: relative;
     top: 40px;
-    font-family: Roboto, sans-serif;
+    font-family: sans-serif;
     line-height: 1.2;
     color: #000000;
     background-color: #f0f0f0;
@@ -223,17 +223,16 @@ code {
 /* nav classes */
 
 nav.navbar {
-    /* this makes it always stay at the top */
     width: 100%;
     position: fixed;
     top: 0;
-    line-height: 1;
-    /* creates the whole bar */
-    background-color: #4a4a4a;
+    line-height: 1.5;
+    background-color: #f0f0f0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
 nav.navbar a {
-    padding: 10px;
+    padding: 15px;
     display: block;
     float: left;
     text-decoration: none;
@@ -241,16 +240,11 @@ nav.navbar a {
 }
 
 nav.navbar a.active {
-    background-color: #4682b4;
+    color: #62aee4;
 }
 
 nav.navbar a:hover {
-    color: #000000;
-    background-color: #b0c4de;
-}
-
-nav.navbar a.right {
-    float: right;
+    background-color: #2e2e2e;
 }
 
 /** custom classes **/
@@ -501,17 +495,26 @@ nav.navbar a.right {
 /* color schemes */
 
 @media (prefers-color-scheme: dark) {
+    /* body classes */
     body {
         color: #ffffff;
         background-color: #1e1e1e;
     }
 
+    /* a classes */
     a, a:visited {
         color: #62aee4;
     }
 
+    /* code classes */
     code {
         color: #e0e0e0;
         background-color: #2d2d2d;
+    }
+
+    /* nav classes */
+    nav.navbar {
+        /* creates the whole bar */
+        background-color: #1e1e1e;
     }
 }
