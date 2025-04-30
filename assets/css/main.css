@@ -3,7 +3,7 @@
 /* Copyright (c) 2024 Aryan */
 /* SPDX-License-Identifier: BSD-3-Clause */
 
-/* Version: 3.1.4 */
+/* Version: 3.2.4 */
 
 html {
     height: 100%;
@@ -134,8 +134,8 @@ table {
 th {
     padding: 12px 15px;
     border: 1px solid #ddd;
-    color: #ffffff;
-    background-color: #4a4a4a;
+    color: #000000;
+    background-color: #bababa;
 }
 
 th.center {
@@ -511,6 +511,7 @@ nav.navbar a:hover {
     
     th {
         color: #ffffff;
+        background-color: #4a4a4a;
     }
 
     /* code classes */
