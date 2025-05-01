@@ -3,7 +3,7 @@
 /* Copyright (c) 2024 Aryan */
 /* SPDX-License-Identifier: BSD-3-Clause */
 
-/* Version: 4.1.0 */
+/* Version: 4.2.0 */
 
 html {
     height: 100%;
@@ -467,6 +467,7 @@ nav {
         }
 
         &.profile-picture {
+            margin-top: 30px;
             max-width: 40%;
         }
 
