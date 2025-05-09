@@ -3,14 +3,78 @@
 /* Copyright (c) 2024 Aryan */
 /* SPDX-License-Identifier: BSD-3-Clause */
 
-/* Version: 4.5.0 */
+/* Version: 5.0.0 */
 
+/* colors */
+
+@property --link-color {
+    syntax: "<color>";
+    inherits: true;
+    initial-value: #62aee4;
+}
+
+@property --border-color {
+    syntax: "<color>";
+    inherits: true;
+    initial-value: #ddd;
+}
+
+@property --fg-color {
+    syntax: "<color>";
+    inherits: true;
+    initial-value: #ffffff;
+}
+
+@property --bg-color {
+    syntax: "<color>";
+    inherits: true;
+    initial-value: #1e1e1e;
+}
+
+@property --nav-hover-color {
+    syntax: "<color>";
+    inherits: true;
+    initial-value: #2e2e2e;
+}
+
+@property --th-bg-color {
+    syntax: "<color>";
+    inherits: true;
+    initial-value: #4a4a4a;
+}
+
+@property --code-fg-color {
+    syntax: "<color>";
+    inherits: true;
+    initial-value: #e0e0e0;
+}
+
+@property --code-bg-color {
+    syntax: "<color>";
+    inherits: true;
+    initial-value: #2d2d2d;
+}
+
+/** light theme **/
+:root {
+    &:has(#light-mode-button:checked) {
+        --link-color: #3a7ca0;
+        --border-color: #000000;
+        --fg-color: #000000;
+        --bg-color: #f0f0f0;
+        --nav-hover-color: #e0e0e0;
+        --th-bg-color: #bababa;
+        --code-fg-color: #44474e;
+        --code-bg-color: #c4c6cf;
+    }
+}
+
+/* html classes */
 html {
     height: 100%;
 }
 
 /* body classes */
-
 body {
     margin: 0;
     padding-bottom: 40px;
@@ -18,12 +82,11 @@ body {
     top: 50px;
     font-family: sans-serif;
     line-height: 1.2;
-    color: #000000;
-    background-color: #f0f0f0;
+    color: var(--fg-color);
+    background-color: var(--bg-color);
 }
 
 /* h1 classes */
-
 h1 {
     width: 50%;
     margin-left: auto;
@@ -41,7 +104,6 @@ h1 {
 }
 
 /* h2 classes */
-
 h2 {
     width: 50%;
     margin-left: auto;
@@ -55,7 +117,6 @@ h2 {
 }
 
 /* h3 classes */
-
 h3 {
     width: 50%;
     margin-left: auto;
@@ -65,7 +126,6 @@ h3 {
 }
 
 /* h4 classes */
-
 h4 {
     width: 50%;
     margin-left: auto;
@@ -75,7 +135,6 @@ h4 {
 }
 
 /* h5 classes */
-
 h5 {
     width: 50%;
     margin-left: auto;
@@ -85,7 +144,6 @@ h5 {
 }
 
 /* p classes */
-
 p {
     width: 50%;
     margin-left: auto;
@@ -99,18 +157,16 @@ p {
 }
 
 /* a classes */
-
 a {
     text-decoration: none;
-    color: #62aee4;
+    color: var(--link-color);
 
     &:visited {
-        color: #62aee4;
+        color: var(--link-color);
     }
 }
 
 /* ol classes */
-
 ol {
     li {
         margin-bottom: 10px;
@@ -118,7 +174,6 @@ ol {
 }
 
 /* li classes */
-
 li {
     width: 50%;
     margin-left: auto;
@@ -129,7 +184,6 @@ li {
 }
 
 /* table classes */
-
 table {
     width: 50%;
     table-layout: fixed;
@@ -141,24 +195,21 @@ table {
 }
 
 /* th classes */
-
 th {
     padding: 12px 15px;
-    border: 1px solid #ddd;
-    color: #000000;
-    background-color: #bababa;
+    border: 1px solid var(--border-color);
+    color: var(--fg-color);
+    background-color: var(--th-bg-color);
 
     &.center {
         text-align: center;
     }
 }
 
-
 /* td classes */
-
 td {
     padding: 12px 15px;
-    border: 1px solid #ddd;
+    border: 1px solid var(--border-color);
     overflow-wrap: break-word;
 
     code {
@@ -171,7 +222,6 @@ td {
 }
 
 /* col classes */
-
 col {
     &.thin {
         width: 20%;
@@ -183,7 +233,6 @@ col {
 }
 
 /* img classes */
-
 img {
     max-width: 50%;
 
@@ -216,7 +265,6 @@ img {
 }
 
 /* figcaption classes */
-
 figcaption {
     width: 50%;
     margin-top: 10px;
@@ -228,7 +276,6 @@ figcaption {
 }
 
 /* code classes */
-
 code {
     width: 50%;
     font-size: 20px;
@@ -237,34 +284,52 @@ code {
     margin-right: auto;
     display: block;
     padding: 2px;
-    color: #44474e;
-    background-color: #c4c6cf;
+    color: var(--code-fg-color);
+    background-color: var(--code-bg-color);
 }
 
 /* nav classes */
-
 nav {
     &.navbar {
         width: 100%;
         position: fixed;
         top: 0;
         line-height: 1.5;
-        background-color: #f0f0f0;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        background-color: var(--bg-color);
+    	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+
+        /* Reduce shadow if its on light theme */
+        &:has(#light-mode-button:checked) {
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
 
         a {
             padding: 15px;
             display: block;
             float: left;
+            font-size: 18px;
             text-decoration: none;
-            color: #000000;
+            color: var(--fg-color);
 
             &.active {
-                color: #62aee4;
+                color: var(--link-color);
             }
 
             &:hover {
-                background-color: #e0e0e0;
+                background-color: var(--nav-hover-color);
+            }
+        }
+
+        label {
+            display: inline-flex;
+            float: right;
+            padding: 15px;
+            font-size: 18px;
+            white-space: nowrap;
+            align-items: center;
+
+            input[type="checkbox"] {
+                margin-right: 10px;
             }
         }
     }
@@ -273,7 +338,6 @@ nav {
 /** custom classes **/
 
 /* social container */
-
 .social-container {
     display: block;
     margin: 0 auto;
@@ -289,59 +353,64 @@ nav {
 
 /** smaller displays **/
 
-/* tablet size */
+@media (max-width: 800px) {
+    /* navbar classes */
+    nav {
+        &.navbar {
+            display: flex;
+            overflow-x: scroll;
+            line-height: 1;
 
+            label {
+                padding: 5px;
+            }
+        }
+    }
+}
+
+/* tablet size */
 @media (min-width: 600px) and (max-width: 1500px) {
     /* h1 classes */
-
     h1 {
         width: 80%;
     }
 
     /* h2 classes */
-
     h2 {
         width: 80%;
     }
 
     /* h3 classes */
-
     h3 {
         width: 80%;
     }
 
     /* h4 classes */
-
     h4 {
         width: 80%;
     }
 
     /* h5 classes */
-
     h5 {
         width: 80%;
     }
 
     /* p classes */
-
     p {
         width: 80%;
     }
 
     /* li classes */
-
     li {
         width: 80%;
     }
 
     /* table classes */
-
     table {
         width: 80%;
     }
 
     /* img classes */
-
     img {
         width: 80%;
         max-width: 80%;
@@ -366,13 +435,11 @@ nav {
     }
 
     /* figcaption classes */
-
     figcaption {
         width: 80%;
     }
 
     /* code classes */
-
     code {
         width: 80%;
     }
@@ -380,7 +447,6 @@ nav {
     /** custom classes **/
 
     /* social container */
-
     .social-container {
         width: 80%;
 
@@ -401,63 +467,54 @@ nav {
     }
 
     /* h1 classes */
-
     h1 {
         width: 90%;
         font-size: 30px;
     }
 
     /* h2 classes */
-
     h2 {
         width: 90%;
         font-size: 25px;
     }
 
     /* h3 classes */
-
     h3 {
         width: 90%;
         font-size: 20px;
     }
 
     /* h4 classes */
-
     h4 {
         width: 90%;
         font-size: 15px;
     }
 
     /* h5 classes */
-
     h5 {
         width: 90%;
         font-size: 13px;
     }
 
     /* p classes */
-
     p {
         width: 90%;
         font-size: 15px;
     }
 
     /* li classes */
-
     li {
         width: 90%;
         font-size: 15px;
     }
 
     /* table classes */
-    
     table {
         width: 90%;
         font-size: 15px;
     }
 
     /* col classes */
-    
     col {
         &.thin {
             width: 30%;
@@ -469,7 +526,6 @@ nav {
     }
 
     /* img classes */
-
     img {
         max-width: 80%;
 
@@ -493,33 +549,20 @@ nav {
     }
 
     /* figcaption classes */
-
     figcaption {
         width: 90%;
         font-size: 12px;
     }
 
     /* code classes */
-
     code {
         width: 90%;
         font-size: 15px;
     }
 
-    /* navbar classes */
-
-    nav {
-        &.navbar {
-            display: flex;
-            overflow-x: scroll;
-            line-height: 1;
-        }
-    }
-
     /** custom classes **/
     
     /* social container */
-
     .social-container {
         width: 90%;
 
@@ -527,53 +570,6 @@ nav {
             width: 75px;
             height: 75px;
             margin: 5px;
-        }
-    }
-}
-
-/* color schemes */
-
-@media (prefers-color-scheme: dark) {
-    /* body classes */
-    body {
-        color: #ffffff;
-        background-color: #1e1e1e;
-    }
-
-    /* a classes */
-    a {
-        &:visited {
-            color: #62aee4;
-        }
-    }
-
-    /* th classes */
-    
-    th {
-        color: #ffffff;
-        background-color: #4a4a4a;
-    }
-
-    /* code classes */
-    code {
-        color: #e0e0e0;
-        background-color: #2d2d2d;
-    }
-
-    /* nav classes */
-    nav {
-        &.navbar {
-            /* creates the whole bar */
-            background-color: #1e1e1e;
-    	    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-
-            a {
-                color: #ffffff;
-
-                &:hover {
-                    background-color: #2e2e2e;
-                }
-            }
         }
     }
 }
